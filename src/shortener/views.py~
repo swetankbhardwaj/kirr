@@ -14,7 +14,3 @@ class KirrCBView(View): #class based view
 		obj = get_object_or_404(KirrURL, shortcode=shortcode)
         return HttpResponse("hello again {sc}".format(sc=shortcode))
 
-	def post(self, request, *args, **kwargs):
-        return HttpResponse()
-
-
